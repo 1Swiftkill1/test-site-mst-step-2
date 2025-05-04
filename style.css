@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-flow {
+    font-size: 6.2vw;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.video-box {
+    display: inline-block;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0 0.3vw;
+    height: 4.5vw;
+    object-fit: cover;
+}
+
+/* Размеры видео-блоков */
+.video-1 { width: 40vw; }
+.video-2 { width: 20vw; }
+.video-3 { width: 30vw; }
+.video-4 { width: 62vw; }
+
+.video-box video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+#source-video {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .text-flow {
+        font-size: 8vw;
+        line-height: 1.5;
+    }
+    
+    .video-box {
+        height: 6vw;
+        margin: 0 0.5vw;
+    }
+    
+    .video-1 { width: 50vw; }
+    .video-2 { width: 40vw; }
+    .video-3 { width: 50vw; }
+    .video-4 { width: 80vw; }
+}
+
+@media (min-width: 1600px) {
+    .text-flow {
+        font-size: 4vw;
+    }
+    
+    .video-box {
+        height: 3vw;
+    }
+}
